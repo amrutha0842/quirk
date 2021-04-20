@@ -3,7 +3,7 @@ import {
   EXPLANATION_SCREEN,
   SETTING_SCREEN,
   CBT_ON_BOARDING_SCREEN,
-  PAYMENT_SCREEN,
+  PAYMENT__SCREEN,
   LOCK_SCREEN,
   MAIN_SCREEN,
   CHECKUP_SCREEN,
@@ -40,7 +40,7 @@ const App = createBottomTabNavigator(
     [MAIN_SCREEN]: MainScreen,
     [SETTING_SCREEN]: SettingScreen,
     [EXPLANATION_SCREEN]: IndexLearnScreen,
-    [PAYMENT_SCREEN]: PaymentScreen,
+    [PAYMENT__SCREEN]: PaymentScreen,
     [LOCK_SCREEN]: LockScreen,
     [CBT_ON_BOARDING_SCREEN]: OnboardingScreen,
     [CHECKUP_SCREEN]: CheckupScreen,
@@ -48,7 +48,7 @@ const App = createBottomTabNavigator(
     [MARKDOWN_ARTICLE_SCREEN]: MarkdownArticleScreen,
   },
   {
-    initialRouteName: PAYMENT_SCREEN,
+    initialRouteName: PAYMENT__SCREEN,
     tabBarComponent: props => {
       return <TabBar {...props} />;
     },
